@@ -2,14 +2,14 @@
 #include <avr/pgmspace.h>
 
 // Settings
-#define PIN 12
+#define PIN 1
 #define BRIGHTNESS 255 // 0-255
 // Set this parameters equal to those set into Ledsy
-#define NUMBER_OF_PIXELS 24
+#define NUMBER_OF_PIXELS 16
 #define SEQUENCE_LENGTH 46
 #define SLICE_DURATION 150
 
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUMBER_OF_PIXELS, PIN, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUMBER_OF_PIXELS, PIN, NEO_GRBW + NEO_KHZ800);
 
 const uint8_t ledSeq [SEQUENCE_LENGTH][NUMBER_OF_PIXELS][3] PROGMEM = 
 // Paste here the Output code
